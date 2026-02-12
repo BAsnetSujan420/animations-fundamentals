@@ -25,12 +25,14 @@ const DialogContent = styled.div`
 `;
 
 const CloseButton = styled.button`
+  position: absolute;
   padding: 16px;
   background: transparent;
   border: none;
   font-weight: bold;
   cursor: pointer;
   align-self: flex-end;
+  transform: translateY(-100%);
 `;
 
 export default function Dialog({ onClose }) {
