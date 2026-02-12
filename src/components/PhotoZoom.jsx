@@ -7,11 +7,19 @@ const Wrapper = styled.div`
   gap: 8px;
 `;
 
-const ThumbnailLink = styled.a``;
+const ThumbnailLink = styled.a`
+  overflow: hidden;
+`;
 
 const Thumbnail = styled.img`
   display: block;
   width: 100%;
+  transition: transform 500ms;
+
+  ${ThumbnailLink}: hover, 
+  ${ThumbnailLink}: focus & {
+    transform: scale(1.2);
+  }
 `;
 
 export default function PhotoZoom() {
