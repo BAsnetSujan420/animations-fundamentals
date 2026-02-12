@@ -26,6 +26,13 @@ const Card = styled.article`
   background: white;
   border-radius: 8px;
   border: 2px solid hsl(240deg 100% 75%);
+  transition: transform 250ms;
+
+  /* no doom flicker*/
+  ${CardLink}: hover  & {
+    transform: translateY(-16px);
+    transition: transform 250ms;
+  }
 `;
 
 const CardImg = styled.img`
