@@ -4,6 +4,7 @@ import DoomFlicker from './components/DoomFlicker';
 import HelpButton from './components/HelpButton';
 import PhotoZoom from './components/PhotoZoom';
 import TranslatedCards from './components/TranslatedCards';
+import WavingHand from './components/WavingHand';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <DoomFlicker /> */}
       {/* <TranslatedCards /> */}
       {/* <PhotoZoom /> */}
-      <HelpButton />
+      {/* <HelpButton /> */}
+      <WavingHand />
     </>
   );
 }
