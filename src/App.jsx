@@ -1,6 +1,7 @@
 import './App.css';
 import Dialog from './components/Dialog';
 import DoomFlicker from './components/DoomFlicker';
+import HelpButton from './components/HelpButton';
 import PhotoZoom from './components/PhotoZoom';
 import TranslatedCards from './components/TranslatedCards';
 
@@ -10,7 +11,8 @@ function App() {
       {/* <Dialog /> */}
       {/* <DoomFlicker /> */}
       {/* <TranslatedCards /> */}
-      <PhotoZoom />
+      {/* <PhotoZoom /> */}
+      <HelpButton />
     </>
   );
 }
