@@ -1,10 +1,20 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const slideIn = keyframes`
+from {
+ transform: translateY(calc(100% +  var(--spacing)));
+ }
+ to {
+ transform: translateY(0%);
+ }
+`;
 
 const HelpCircle = styled.button`
+  --spacing: 32px;
   position: fixed;
-  right: 32px;
-  bottom: 32px;
+  right: var(--spacing);
+  bottom: var(--spacing);
 
   display: grid;
   place-content: center;
@@ -19,6 +29,9 @@ const HelpCircle = styled.button`
     0px 4px 16px hsl(0deg 0% 0% / 0.1),
     0px 8px 32px hsl(0deg 0% 0% / 0.1);
   cursor: pointer;
+
+  animation: ${slideIn} 500ms backwards;
+  animation-delay: 1000ms;
 `;
 
 const HelpIcon = styled.img`
