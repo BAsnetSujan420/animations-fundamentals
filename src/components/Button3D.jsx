@@ -18,14 +18,16 @@ const Front = styled.span`
   color: white;
 
   transform: translateY(-4px);
-  transition: transform 150ms;
+  transition: transform 500ms;
 
   ${Pushable}:hover & {
     transform: translateY(-6px);
+    transition: transform 250ms;
   }
 
   ${Pushable}:active & {
     transform: translateY(-2px);
+    transition: transform 50ms;
   }
 `;
 
