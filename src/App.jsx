@@ -1,4 +1,5 @@
 import './App.css';
+import Button3D from './components/Button3D';
 import Dialog from './components/Dialog';
 import DoomFlicker from './components/DoomFlicker';
 import HelpButton from './components/HelpButton';
@@ -14,7 +15,8 @@ function App() {
       {/* <TranslatedCards /> */}
       {/* <PhotoZoom /> */}
       {/* <HelpButton /> */}
-      <WavingHand />
+      {/* <WavingHand /> */}
+      <Button3D />
     </>
   );
 }
