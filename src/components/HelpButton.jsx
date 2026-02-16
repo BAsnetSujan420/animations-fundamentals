@@ -10,6 +10,15 @@ from {
  }
 `;
 
+const fadeIn = keyframes`
+from {
+ opacity: 0;
+ }
+ to {
+ opacity: 1;
+ }
+`;
+
 const HelpCircle = styled.button`
   --spacing: 32px;
   position: fixed;
@@ -29,9 +38,11 @@ const HelpCircle = styled.button`
     0px 4px 16px hsl(0deg 0% 0% / 0.1),
     0px 8px 32px hsl(0deg 0% 0% / 0.1);
   cursor: pointer;
-
-  animation: ${slideIn} 500ms backwards;
+  animation: ${fadeIn} 500ms backwards;
   animation-delay: 1000ms;
+  @media (prefers-reduced-motion: no-preference) {
+    animation-name: ${slideIn};
+  }
 `;
 
 const HelpIcon = styled.img`

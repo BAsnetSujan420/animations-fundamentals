@@ -14,9 +14,9 @@ function App() {
       {/* <DoomFlicker /> */}
       {/* <TranslatedCards /> */}
       {/* <PhotoZoom /> */}
-      {/* <HelpButton /> */}
+      <HelpButton />
       {/* <WavingHand /> */}
-      <Button3D />
+      {/* <Button3D /> */}
     </>
   );
 }
